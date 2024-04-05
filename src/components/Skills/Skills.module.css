@@ -1,0 +1,46 @@
+.skills_con {
+    background-color: #0085FF;
+    height: 300px;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+
+    & .skills_title {
+        margin-top: 40px;
+        font-size: 24px;
+    }
+
+    & .skills_list {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        margin-top: 70px;
+
+        & li {
+            margin: 0 20px;
+
+            & svg {
+                width: 80px;
+                height: 80px;
+                color: white;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px){
+
+    .skills_con {
+        height: auto;
+        padding-bottom: 50px;
+
+        & .skills_list {
+            flex-direction: column;
+
+            & li {
+                margin: 15px 0;
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,50 @@
+.testi_con {
+    height: 500px;
+    overflow: hidden;
+    background-color: white;
+    text-align: center;
+
+    & .testi_title {
+        margin-top: 50px;
+        font-size: 32px;
+        font-weight: bold;
+    }
+
+    & .testi_list {
+        display: flex;
+        justify-content: center;
+        margin-top: 80px;
+
+        & .testi_items {
+            width: 300px;
+            margin: 0 20px;
+            & img {
+                width: 60px;
+                height: 60px;
+                border-radius: 100%;
+                object-fit: cover;
+                margin: 15px 0;
+            }
+
+            & h5 {
+                color: rgb(122, 121, 121);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .testi_con {
+        height: auto;
+
+        & .testi_list {
+            flex-direction: column;
+
+            & .testi_items {
+                width: 100%;
+                margin: 0;
+                padding: 30px;
+            }
+        }
+    }
+}
