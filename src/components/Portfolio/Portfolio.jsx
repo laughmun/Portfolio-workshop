@@ -3,7 +3,7 @@ import styles from './Portfolio.module.css'
 import { Tilt } from 'react-tilt'
 
 const settingTilt = {
-	reverse: rue,  
+	reverse: true,  
 	scale: 1.1,   
 	speed: 2000,
     transition: true
